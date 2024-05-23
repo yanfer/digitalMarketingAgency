@@ -45,17 +45,17 @@ const FormSchema = z.object({
   job_title: z.string(),
   company_name: z.string(),
   help: z.enum([
-    "Evaluate Bird for my company",
-    "Learn More",
-    "Get a Quote",
-    "Other",
+    "Evaluación de Y-N para mi empresa",
+    "Aprender más",
+    "Obten un presupuesto",
+    "Otros",
   ]),
   services: z.enum([
-    "Mobile App Develoment",
-    "Social Media Marketing",
-    "UI/UX Design",
+    "Desarrollo de aplicaciones móviles",
+    "Marketing de medios sociales",
+    "Diseño UI/UX",
     "Branding",
-    "Website Development",
+    "Desarrollo de sitios web",
   ]),
   info: z.string(),
 });
@@ -66,13 +66,13 @@ type FormValues = {
   email: string;
   job_title: string;
   company_name: string;
-  help: "Evaluate Bird for my company" | "Learn More" | "Get a Quote" | "Other";
+  help:  "Evaluación de Y-N para mi empresa" | "Aprender más" | "Obten un presupuesto" | "Otros";
   services:
-    | "Mobile App Develoment"
-    | "Social Media Marketing"
-    | "UI/UX Design"
+    | "Desarrollo de aplicaciones móviles"
+    |  "Marketing de medios sociales"
+    | "Diseño UI/UX"
     | "Branding"
-    | "Website Development";
+    | "Desarrollo de sitios web";
   info: string;
   terms: boolean;
 };
@@ -90,8 +90,8 @@ export default function ContactForm() {
       email: "",
       job_title: "",
       company_name: "",
-      help: "Learn More",
-      services: "Mobile App Develoment",
+      help: "Aprender más",
+      services: "Desarrollo de aplicaciones móviles",
       info: "",
     },
   });
@@ -106,14 +106,14 @@ export default function ContactForm() {
       });
 
       if (!res.ok) {
-        throw new Error("Something went wrong");
+        throw new Error("Algo salio mal");
       }
 
       setSubmitted(true);
     } catch (error) {
       toast({
         title: "Error",
-        description: "Something went wrong",
+        description: "Algo salio mal",
       });
     } finally {
       setLoading(false);
@@ -132,7 +132,7 @@ export default function ContactForm() {
       <div className="md:flex items-start justify-center md:py-20 px-6">
         <div className="">
           <div className="text-5xl font-medium  w-full md:w-2/3  pb-5 md:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-            Contact our sales team
+            Contacta con nuestro equipo de ventas
           </div>
           <div
             className="
@@ -141,27 +141,25 @@ export default function ContactForm() {
               text-gray-300
                     "
           >
-            Let&apos;s talk about how Bird can help your team work better.
+            Hablemos de cómo Y-N puede ayudar a su equipo a trabajar mejor.
           </div>
 
           <div className="bg-[#f6f5f4] md:w-4/5 space-y-6 p-4 rounded-2xl my-4 hidden md:flex md:flex-col">
             <div className="flex gap-4 border-b ">
               <div className=" font-normal pb-4 ">
-                One flexible agency for your entire company to share knowledge,
-                ship projects, and collaborate.
+                Una agencia flexible para que toda su empresa comparta conocimientos, envíe proyectos y colabore.
               </div>
             </div>
 
             <div className="flex gap-4 border-b ">
               <div className=" font-normal pb-4 ">
-                Enterprise features to securely manage user access and security.
+                Funciones empresariales para gestionar de forma segura el acceso y la seguridad de los usuarios.
               </div>
             </div>
 
             <div className="flex gap-4  ">
               <div className=" font-normal pb-4 ">
-                Dedicated support to work with you on your setup and help you
-                build the best plan for your company.
+                Soporte dedicado para trabajar con usted en su configuración y ayudarlo a crear el mejor plan para su empresa.
               </div>
             </div>
           </div>
@@ -188,7 +186,7 @@ export default function ContactForm() {
                   render={({ field }) => (
                     <FormItem className="items-center justify-center  w-full">
                       <FormLabel className="text-sm bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-                        First name *
+                        Nombre *
                       </FormLabel>
                       <FormControl>
                         <Input {...field} />
@@ -203,7 +201,7 @@ export default function ContactForm() {
                   render={({ field }) => (
                     <FormItem className="items-center justify-center  w-full">
                       <FormLabel className="text-sm bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-                        Last name *
+                        Apellido *
                       </FormLabel>
                       <FormControl>
                         <Input {...field} />
@@ -234,7 +232,7 @@ export default function ContactForm() {
                 render={({ field }) => (
                   <FormItem className="items-center justify-center  w-full">
                     <FormLabel className="text-sm bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-                      Company name?
+                      Nombre de Compañia?
                     </FormLabel>
                     <FormControl>
                       <Input {...field} />
@@ -249,7 +247,7 @@ export default function ContactForm() {
                 render={({ field }) => (
                   <FormItem className="items-center justify-center w-full">
                     <FormLabel className="text-sm bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-                    Services you are interested in
+                    Servicios que le interesan
                     </FormLabel>
                     <Select
                       onValueChange={field.onChange}
@@ -257,16 +255,16 @@ export default function ContactForm() {
                     >
                       <FormControl>
                         <SelectTrigger>
-                          <SelectValue placeholder="Select an option" />
+                          <SelectValue placeholder="Selecciona una opción" />
                         </SelectTrigger>
                       </FormControl>
                       <SelectContent>
                         <div className="flex gap-4">
                           <SelectItem value="Mobile App Develoment">
-                          Mobile App Develoment
+                          Desarrollo de aplicaciones móviles
                           </SelectItem>
                         </div>
-                        <SelectItem value="Social Media Marketing">Social Media Marketing</SelectItem>
+                        <SelectItem value="Social Media Marketing">Marketing de medios sociales</SelectItem>
                         <SelectItem value="51-200">51-200</SelectItem>
                         <SelectItem value="501-1000">501-1000</SelectItem>
                         <SelectItem value="1000+">1000+</SelectItem>
@@ -282,7 +280,7 @@ export default function ContactForm() {
                 render={({ field }) => (
                   <FormItem className="items-center justify-center  w-full">
                     <FormLabel className="text-sm bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-                      How can we help ?
+                      Cómo podemos ayudar ?
                     </FormLabel>
                     <Select
                       onValueChange={field.onChange}
@@ -293,19 +291,19 @@ export default function ContactForm() {
                         
                         
                         >
-                          <SelectValue placeholder="Select an option" />
+                          <SelectValue placeholder="Selecciona una opción" />
                         </SelectTrigger>
                       </FormControl>
                       <SelectContent>
                         <div className="flex gap-4">
                           <SelectItem value="Evaluate Bird for my company">
-                            Evaluate Bird for my company
+                           Evaluación de Y-N para mi empresa
                           </SelectItem>
                         </div>
-                        <SelectItem value="Learn More">Learn More</SelectItem>
-                        <SelectItem value="Get a Quote">Get a Quote</SelectItem>
+                        <SelectItem value="Learn More">Aprender más</SelectItem>
+                        <SelectItem value="Get a Quote">Obtener un presupuesto</SelectItem>
 
-                        <SelectItem value="Other">Other</SelectItem>
+                        <SelectItem value="Other">Otros</SelectItem>
                       </SelectContent>
                     </Select>
                   </FormItem>
@@ -318,7 +316,7 @@ export default function ContactForm() {
                 render={({ field }) => (
                   <FormItem className="items-center justify-center w-full">
                     <FormLabel className="text-sm bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-                      Anything else ?
+                      Algo más ?
                     </FormLabel>
                     <FormControl>
                       <Textarea style={{ height: "100px" }} {...field} />
@@ -340,8 +338,7 @@ export default function ContactForm() {
                   />
                 </div>
                 <div className="text-xs font-light  md:w-3/4 mb-1 bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
-                  I agree to Bird&apos; sending marketing communications related
-                  to bird
+                  Acepto que Y-N envíe comunicaciones de marketing relacionadas a Y-N
                 </div>
               </div>
 
@@ -356,7 +353,7 @@ export default function ContactForm() {
                   disabled={loading}
                   onClick={() => form.handleSubmit(onSubmit)}
                 >
-                  Submit
+                  Enviar
                 </Button>
               </div>
             </form>
@@ -382,8 +379,7 @@ export default function ContactForm() {
                   <PiSmiley className="text-6xl text-[#6c6684] mx-auto" />
 
                   <div className="text-gray-500 font-light  text-center justify-center mx-auto py-10">
-                    We&apos;ve received your inquiry and will be contacting you
-                    via email shortly.
+                    Hemos recibido tu consulta y nos comunicaremos contigo por correo electrónico en breve.
                   </div>
                 </div>
               </div>
