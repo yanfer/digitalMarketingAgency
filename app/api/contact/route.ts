@@ -50,12 +50,12 @@ export async function POST(req: Request) {
  
       await transporter.sendMail(mailOptions);
 
-      return NextResponse.json("email has been sent");
+      return NextResponse.json("Correo Enviado");
     } catch (error) {
-      return NextResponse.json("email has not been sent");
+      return NextResponse.json("Correo no enviado");
     }
   } else {
-    return NextResponse.json('method not allowed');
+    return NextResponse.json('Metodo no permitido');
   }
 
 }
