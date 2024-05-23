@@ -18,30 +18,30 @@ export function InfiniteMovingCardsDemo() {
 const testimonials = [
   {
     quote:
-      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
+      "Fue el mejor de los tiempos, fue el peor de los tiempos, fue la era de la sabiduría, fue la era de la necedad, fue la época de la fe, fue la época de la incredulidad, fue la estación de la Luz, fue la época de la Era la estación de la Oscuridad, era la primavera de la esperanza, era el invierno de la desesperación.",
     name: "Charles Dickens",
-    title: "A Tale of Two Cities",
+    title: "Un cuento sobre dos ciudades",
   },
   {
     quote:
-      "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
+      "Ser o no ser, ese es el dilema: si es más noble para la mente sufrir los golpes y las flechas de la fortuna escandalosa, o tomar las armas contra un mar de problemas, y oponiéndose a ellos acabar: morir, morir. dormir.",
     name: "William Shakespeare",
     title: "Hamlet",
   },
   {
-    quote: "All that we see or seem is but a dream within a dream.",
+    quote: "Todo lo que vemos o parecemos no es más que un sueño dentro de un sueño.",
     name: "Edgar Allan Poe",
-    title: "A Dream Within a Dream",
+    title: "Un sueño dentro de un sueño",
   },
   {
     quote:
-      "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
+      "Es una verdad universalmente reconocida que un hombre soltero en posesión de una buena fortuna debe necesitar una esposa.",
     name: "Jane Austen",
-    title: "Pride and Prejudice",
+    title: "Orgullo y prejuicio",
   },
   {
     quote:
-      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
+      "Llámame Ismael. Hace algunos años (no importa cuántos exactamente), teniendo poco o ningún dinero en mi bolso y nada particular que me interesara en tierra, pensé en navegar un poco y ver la parte acuática del mundo.",
     name: "Herman Melville",
     title: "Moby-Dick",
   },
