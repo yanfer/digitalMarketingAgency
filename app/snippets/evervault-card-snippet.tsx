@@ -12,11 +12,10 @@ export function EvervaultCardSnippet() {
       <EvervaultCard text="hover" />
 
       <h2 className="text-white  mt-4 text-sm font-light">
-        Hover over this card to reveal an awesome effect. Running out of copy
-        here.
+        Pase el cursor sobre esta carta para revelar un efecto asombroso. 
       </h2>
       <p className="text-sm border font-light border-white/[0.2]  rounded-full mt-4  text-white px-2 py-0.5">
-        Watch me hover
+       Mírame flotar
       </p>
     </div>
   );
