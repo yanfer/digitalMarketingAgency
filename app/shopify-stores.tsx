@@ -5,21 +5,21 @@ import Image from "next/image";
 const stores = [
   {
     image: "/images/image2.png",
-    quote: "Bird showed us to get started, what to do, and how to do it.",
-    name: "Jason Scer",
+    quote: "Y-N nos enseñó que hacer y como hacerlo.",
+    name: "Marcos Gonzalez",
   },
   {
     image: "/images/shop-2.jpeg",
     quote:
-      "We had no idea how to get started, but Bird showed us the way. And we were able to create something amazing.",
-    name: "John Prency",
+      "No teníamos idea de como comenzar, peor Y-N nos mostró el camino. Ahora somos capaces de crear cosas asomobrosas.",
+    name: "Pedro Canteros",
   },
 
   {
     image: "/images/s-2.webp",
     quote:
-      "The team at Bird is amazing. They helped us create a stunning store that we are proud of.",
-    name: "Miguel Martinez",
+      "El equipo de Y-N es asombroso. Nos ayudaron a crear una tienda asomobrosa de la cual estamos orgullosos.",
+    name: "Elena Barrietos",
   },
 ];
 
@@ -37,7 +37,7 @@ const ShopifyStores = () => {
         </div>
 
         <p className="mt-4 text-lg font-normal  text-neutral-800 max-w-lg text-center mx-auto">
-          We create stunning Shopify stores that are designed to convert.
+          Creamos apantallantes tiendas diseñadas para dar confianza.
         </p>
         <div className="md:flex items-center justify-center  px-10 ">
           {stores.map((store, index) => (
