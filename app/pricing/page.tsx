@@ -11,60 +11,60 @@ import Navbar from "@/components/navbar";
 const plans = [
   {
     index: 0,
-    name: "Basic",
+    name: "Basico",
     price: " US $499",
     features: [
-      "Fully responsive on all screens",
+      "Completamente responsiva en todas las pantallas",
 
-      "Design + Development",
+      "Diseño + Desarrollo",
 
-      "Private communication channel",
-      "1-3 days turnaround time",
+      
+     
     ],
     style:
       " rounded-3xl  py-10 bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-50",
     description:
-      "Standalone components tailored to your needs and easily integrated. Perfect for website elements or sections.",
-    button: "Buy Now",
+      "Componentes independientes adaptados a sus necesidades y fácilmente integrados. Perfecto para elementos o secciones de sitios web.",
+    button: "Comprar ahora",
   },
   {
     index: 1,
     name: "Premium",
     price: "US $1299",
     features: [
-      "Fully responsive on all screens",
-      "React / Next.js / Tailwind CSS code",
-      "Design + Development",
-      "24-hour support response time",
-      "Private communication channel",
-      "3-5 days turnaround time",
+      "Completamente responsiva en todas las pantallas",
+      "Código React / Next.js / Tailwind CSS",
+       "Diseño + Desarrollo",
+      "Tiempo de respuesta de soporte las 24 horas",
+      "Canal de comunicación privado",
+       "Tiempo de respuesta de 3 a 5 días",
     ],
     style:
       " rounded-3xl  py-10 bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-50",
     description:
-      "Best for early-stage startups, businesses, and freelancers that need a marketing side to showcase their work and vision.",
-    button: "Buy Now",
+      "Lo mejor para empresas emergentes, empresas y autónomos en etapa inicial que necesitan una faceta de marketing para mostrar su trabajo y visión.",
+    button: "Comprar ahora",
   },
   {
     index: 2,
-    name: "Enterprise",
-    feature: "Contact Us",
-    price: "Let's Talk!",
+    name: "Empresa",
+    feature: "Contactanos",
+    price: "Hablemos!",
     features: [
-      "Fully responsive on all screens",
-      "React / Next.js / Tailwind CSS code",
-      "Design + Development",
-      "Unlimited Revisions",
-      "24-hour support response time",
-      "Private communication channel",
-      "Priority Development Queue",
-      "Dedicated Project Manager",
+      "Completamente responsiva en todas las pantallas",
+    "Código React / Next.js / Tailwind CSS",
+      "Diseño + Desarrollo",
+      "Revisiones ilimitadas",
+      "Tiempo de respuesta de soporte las 24 horas",
+      "Canal de comunicación privado",
+      "Cola de desarrollo prioritario",
+      "Gerente de proyecto propio",
     ],
     style:
       " h-full rounded-3xl py-10 flex flex-col  bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-50  ",
     description:
-      "Best for small businesses and startups that need a performant website that looks great and converts visitors to customers.",
-    button: "Contact Us",
+      "Lo mejor para pequeñas empresas y nuevas empresas que necesitan un sitio web eficaz que se vea genial y convierta visitantes en clientes.",
+    button: "Contactanos",
   },
 ];
 
@@ -84,7 +84,7 @@ const Pricing = () => {
 
 <div className="flex items-center justify-center flex-col   ">
           <div className="text-5xl pb-10 md:pb-20 text-slate-300 px-6 text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-500 bg-opacity-50">
-            Simple Pricing <br /> Choose your plan
+            Precios sencillos <br /> Elige tu plan
           </div>
           <div className="grid md:grid-cols-3 gap-6 px-6 md:w-4/5 2xl:w-3/4 cursor-pointer pb-20  items-start ">
             {plans.map((plan, index) => (
@@ -96,9 +96,9 @@ const Pricing = () => {
                   <div className="text-4xl flex  items-center font-medium">
                     {plan.name}
                     {/* render feature tag only for enterprise tab*/}
-                    {plan.feature === "Contact Us" && (
+                    {plan.feature === "Contactanos" && (
                       <div className="text-sm font-medium text-blue-600 bg-blue-100 px-2 py-1 rounded-full ml-4 items-center ">
-                        Contact Us
+                       Contactanos
                       </div>
                     )}
                   </div>
@@ -112,7 +112,7 @@ const Pricing = () => {
                         className="text-lg  py-2 flex space-x-2 items-center"
                       >
                         {/* render checkmark only for enterprise tab*/}
-                        {plan.feature === "Contact Us" ? (
+                        {plan.feature === "Contactanos" ? (
                           <PiCheckCircleFill className="text-blue-400 mr-2 text-xl" />
                         ) : (
                           <PiCheckCircleFill className="text-green-600 mr-2 text-xl" />
@@ -130,7 +130,7 @@ const Pricing = () => {
                       href="https://buy.stripe.com/6oEg1WdsibFr1EYbIK"
                       className="rounded-3xl my-4  py-2 text-white w-full mx-auto items-center flex justify-center bg-gradient-to-r from-emerald-500 to-blue-300"
                     >
-                      Buy Now
+                      Comprar ahora
                     </Link>
                   )}
                     {index === 1 && (
@@ -139,7 +139,7 @@ const Pricing = () => {
                         href="https://buy.stripe.com/14k2b65ZQ8tf5Ve28c"  
                         className="rounded-3xl my-4  py-2 text-white w-full mx-auto items-center flex justify-center bg-gradient-to-r from-emerald-500 to-blue-300" 
                       >
-                        Buy Now
+                        Comprar ahora
                         </Link>
                     )}
                     {index === 2 && (
@@ -148,7 +148,7 @@ const Pricing = () => {
                           href="/contact"
                           className="rounded-3xl my-4  py-2 text-white w-full mx-auto items-center flex justify-center bg-gradient-to-r from-purple-500 to-blue-300"
                         >
-                          Contact Us
+                          Contactanos
                         </Link>
                     )}  
                 </div>
