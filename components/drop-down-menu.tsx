@@ -33,19 +33,19 @@ const DropDownMenu: React.FC<DropDownMenuProps> = ({ onClose, scrollToServices }
     >
       <div className="flex-col flex space-y-10">
         <Link href="/pricing" className="text-black text-2xl">
-          Pricing
+          Precios
         </Link>
         <Link href="/contact" className="text-black text-2xl">
-          Contact
+          Contacto
         </Link>
 
         <Link href="/book" className="text-black text-2xl">
-          Book a call
+          Agendar cita
         </Link>
 
         {/* Add onClick handler to Services link */}
         <Link href='/#services'  className="cursor-pointer text-black text-2xl">
-          Services
+          Servicios
         </Link>
       </div>
     </motion.div>
