@@ -36,12 +36,11 @@ const Brands = () => {
       <div className=" p-4   mx-auto relative z-10  w-full pt-20 md:pt-32">
         <div className="text-4xl md:pb-8 md:text-7xl text-center 
         bg-clip-text text-transparent bg-gradient-to-b from-purple-500 to-sky-200 bg-opacity-50">
-          The best brands <br /> choose us
+          Las mejores marcas <br /> nos escogen.
         </div>
 
         <p className="mt-4 text-lg font-normal  text-neutral-300 max-w-lg text-center mx-auto">
-          From small businesses to large corporations, we have helped many
-          brands elevate their business.
+          Desde pequeñas empresas hasta grandes corporaciones, hemos ayudado a muchas marcas a elevar sus negocios.
         </p>
 
         <div className="grid grid-cols-3  items-center justify-center  mx-auto md:w-3/5 cursor-pointer">
@@ -65,8 +64,7 @@ const Brands = () => {
             font.className
           )}
         >
-          &quot;We got rid of nearly a dozen different tools because of what
-          Bird does for us.&quot;
+          &quot;Nos deshicimos de casi una docena de herramientas diferentes gracias a lo que Y-N hace por nosotros.&quot;
         </div>
 
         <div className="items-center flex justify-center flex-col text-white">
@@ -79,8 +77,8 @@ const Brands = () => {
           />
 
           <div className=" text-center">
-            <div className="text-sm  font-medium pt-4">Carlos Hernandez</div>
-            <div className="text-sm">Marketing Director, Palium Software</div>
+            <div className="text-sm  font-medium pt-4">Graciela Escobar</div>
+            <div className="text-sm">Directora de Marketing, Palium Software</div>
           </div>
         </div>
       </div>
